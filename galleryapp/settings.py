@@ -31,8 +31,11 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    #my apps
     'galley',
-    'bootsrap4',
+    #outside apps
+    'bootstrap4',
+    #django apps
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
