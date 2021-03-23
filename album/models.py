@@ -39,7 +39,17 @@ class Image(models.Model):
 
 class Location(models.Model):
     name = models.CharField(max_length = 60)
-
+        locations = (
+        ('Nairobi','Nairobi'),
+        ('Zurich','Zurich'),
+        ('Paris','Paris'),
+        ('Munich','Munich'),
+        ('Tokyo','Tokyo'),
+        ('London','London'),
+        ('Melbourne','Melbourne'),
+        ('Sydney','Sydney'),
+        ('Berlin','Berlin')
+    )
 
     def __str__(self):
         return self.name
@@ -51,7 +61,12 @@ class Location(models.Model):
 
 class Category(models.Model):
     name = models.CharField(max_length = 60)
-
+    categories = (
+        ('Food','Food'),
+        ('Cars','Cars'),
+        ('Shoes','Shoes'),
+        ('Quotes','Quotes')
+    )
 
 
     def __str__(self):
