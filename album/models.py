@@ -6,7 +6,7 @@ class Image(models.Model):
     pic = models.ImageField(upload_to = 'uploads')
     description = models.TextField()
 
-     @classmethod
+    @classmethod
     def save_image(cls):
         image = cls.objects.all()
         return image
