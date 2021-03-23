@@ -3,3 +3,11 @@ h3{
     text-align: center;
     font-size: 100%;
 }
+
+.card{
+    display: block;
+}
+
+div.container{
+    display: table;
+}
